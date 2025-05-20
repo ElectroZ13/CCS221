@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="webdevTemplate/webdevTemplate/css/bootstrap.css">
+    <script src="webdevTemplate/webdevTemplate/js/bootstrap.min.js"></script>
+    <script src="webdevTemplate/webdevTemplate/js/-3.4.min.js"></script>
+    <script src="webdevTemplate/webdevTemplate/js/popper.min.js"></script>	
+    <script src="webdevTemplate/webdevTemplate/js/bootstrap.js" ></script>
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <style>
+	   .card{
+        width: 500px;
+        height: 250px;
+       }
+	</style>
+	<script type="text/javascript">
+     $(window).ready(function() {
+		$("#box1, #box2, #box3").width(100).height(100);
+        const defaultSize = 100;
+
+		
+		$("#btnBox1").click(function(){ selectedBox = "#box1"; });
+        $("#btnBox2").click(function(){ selectedBox = "#box2"; });
+        $("#btnBox3").click(function(){ selectedBox = "#box3"; });
+
+		$("#btnAdd").click(function(){
+        if(selectedBox) {
+            $(selectedBox).animate({
+                width: "+=50",
+                height: "+=50"
+            }, 200);
+        }
+    });
+
+        $("#btnSub").click(function(){
+        if(selectedBox) {
+            $(selectedBox).animate({
+                width: "-=50",
+                height: "-=50"
+            }, 200);
+        }
+    });
+
+        $("#btnRes").click(function() {
+        $("#box1, #box2, #box3").animate({
+            width: defaultSize,
+            height: defaultSize
+        }, 200);
+    });
+		
+	});
+
+
+
+    </script>		
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="row ">
+            <div class="mx-auto">
+                <div id="box1" class="card mt-5 mx-auto bg-secondary"></div>
+            </div>
+            <div class="mx-auto">
+                <div id="box2" class="card mt-5 mx-auto bg-secondary"></div>
+            </div>
+            <div class="mx-auto">
+                <div id="box3" class="card mt-5 mx-auto bg-secondary"></div>
+            </div>
+        </div>
+	   
+	   
+
+        <div class="row mt-5">
+        <div class="col-sm-0 mx-auto">
+            <button id="btnBox1" class="btn btn-primary">Box 1</button>
+        </div>
+        <div class="col-sm-0 mx-auto">
+            <button id="btnBox2" class="btn btn-primary">Box 2</button>
+        </div>
+        <div class="col-sm-0 mx-auto">
+            <button id="btnBox3" class="btn btn-primary">Box 3</button>
+        </div>
+       
+       </div>
+
+
+       <div class="row mt-5">
+        <div class="col-sm-0 mx-auto">
+            <button id="btnAdd" class="btn btn-primary">Add</button>
+        </div>
+        <div class="col-sm-0 mx-auto">
+            <button id="btnSub" class="btn btn-primary">Reduce</button>
+        </div>
+        <div class="col-sm-0 mx-auto">
+            <button id="btnRes" class="btn btn-primary">Reset</button>
+        </div>
+       
+       </div>
+	   
+	</div>
+  
+  </body>
+</html>
