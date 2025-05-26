@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+</head>
+<body>
+    <canvas id="Chessboard" width="500" height="500" style="border:4px solid purple; margin-left: 32%;">
+</canvas>
+
+<script>
+    var c = document.getElementById("Chessboard");
+		var ctx = c.getContext("2d");
+        var grd = ctx.createRadialGradient(235, 210, 50, 290, 260, 350);
+        grd.addColorStop(0, "blue");
+        grd.addColorStop(1, "red");
+
+ctx.fillStyle = grd;
+ctx.fillRect(0, 0, 500, 500);
+		var x=0;
+		var y=0;
+          for(x=0; x<=500; x+=62.5){
+            ctx.moveTo(x,0);
+		    ctx.lineTo(x,500);
+		    ctx.stroke();
+          }
+
+          for(y=0; y<=500; y+=62.5){
+            ctx.moveTo(0,y);
+		    ctx.lineTo(500,y);
+		    ctx.stroke();
+          }
+
+            b = 0;
+            for (row = 0; row < 8; row++) {
+                n = (row % 2) * 62.5;
+                    for (col = 0; col < 4; col++) {
+                        ctx.fillStyle = "black";
+                        ctx.fillRect(n, b, 62.5, 62.5);
+                        n += 125;
+                    }
+                    b += 62.5;
+            }
+</script>
+</body>
+</html>
