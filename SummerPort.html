@@ -1,0 +1,565 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="webdevTemplate/webdevTemplate/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="webdevTemplate/webdevTemplate/js/bootstrap.min.js"></script>
+    <script src="webdevTemplate/webdevTemplate/js/-3.4.min.js"></script>
+    <script src="webdevTemplate/webdevTemplate/js/popper.min.js"></script>	
+    <script src="webdevTemplate/webdevTemplate/js/bootstrap.js" ></script>
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <style>
+        @font-face {
+            font-family: 'ProximaNova';
+            src: url(webdevTemplate/webdevTemplate/fonts/Proxima-Nova/Proxima\ Nova\ Alt\ Light.otf);
+            font-weight:lighter;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Minion';
+            src: url(webdevTemplate/webdevTemplate/fonts/MinionPro-Regular.otf);
+            font-weight:lighter;
+            font-style: normal;
+        }
+
+        .nav-link{
+            font-family: "ProximaNova";
+            color: #393E41;
+            position: relative;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s;
+        }
+
+        .navbar-custom{
+            background-color: #F6F7EB;
+        }
+
+        .nav-link:hover {
+            color: #E94F37 !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #E94F37;
+            transition: all 0.3s;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        .btn-outline-E94F37{
+            color: #E94F37;
+            border-color: #E94F37;
+        }
+
+        .btn-outline-E94F37:hover {
+           color: white;
+           background-color: #E94F37;
+           border-color: #E94F37;
+        }
+
+        #MYSUMMER{
+            font-family: "Minion";
+            font-size: 55px;
+        }
+
+        #summer{
+            color: #E94F37;
+        }
+        
+        .fa-facebook{
+            transition: all 0.3s;
+        }
+
+        .fa-facebook:hover{
+            color:#E94F37
+        }
+
+        .fa-twitter{
+            transition: all 0.3s;
+        }
+
+        .fa-twitter:hover{
+            color:#E94F37
+        }
+
+        .fa-youtube{
+            transition: all 0.3s;
+        }
+
+        .fa-youtube:hover{
+            color:#E94F37
+        }
+
+        .fa-instagram{
+            transition: all 0.3s;
+        }
+
+        .fa-instagram:hover{
+            color:#E94F37
+        }
+
+        .fa-envelope{
+            transition: all 0.3s;
+        }
+
+        .fa-envelope:hover{
+            color:#E94F37
+        }
+
+        .img-row1 {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+        }
+
+        .img-row1:hover {
+            transform: scale(1.05);
+        }
+
+        .img-mem {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .memory-highlight {
+            border-bottom: 5px solid #E94F37;
+            border-top: 5px solid #E94F37;
+            border-radius: 25px;
+            padding-left: 20px;
+            transition: all 0.3s;
+        }
+
+        .memory-highlight:hover {
+            background-color: rgba(202, 75, 73, 0.1);
+        }
+        
+        .position-relative {
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .image-with-date {
+            position: relative;
+            display: inline-block;
+        }
+
+        .date-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-family: 'Arial', sans-serif;
+        }       
+
+
+	</style>
+	<script type="text/javascript">
+     $(window).ready(function() {
+	  
+		
+
+	});
+
+    </script>		
+
+  </head>
+  <body>
+     <nav class="navbar navbar-expand-md navbar-custom sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="navbar-nav mx-auto"> 
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" href="">Activities</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="PortfolioHOME.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4 p-3">
+    <div class="row align-items-center">
+        <div class="col-md-3 col-6 mt-2">
+            <a class="btn btn-outline-E94F37 btn-block" id="NavText" href="" style="width: 120px;">Activities</a>
+        </div>
+        
+        <div class="col-md-6 col-12 text-center">
+            <h1 id="MYSUMMER">My <span id="summer">Summer 20</span>25</h1>
+        </div>
+        
+        <div class="col-md-3 col-6 d-flex justify-content-center align-items-center"> 
+            <i class="fa-brands fa-facebook m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-brands fa-twitter m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-brands fa-youtube m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-brands fa-instagram m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-solid fa-envelope m-2 p-1" style="font-size: 1.5rem;"></i>
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="IMGS FOR FINALS/NSTP.jpg" alt="H.A.M.R.R." width="100%" height="650px">
+      <div class="carousel-caption">
+    <h3>NSTP Graduation</h3>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="IMGS FOR FINALS/FInalCaseStudy.png" alt="Galleria Stellaria" width="100%" height="650px">
+      <div class="carousel-caption">
+    <h3>Graphics Design Final Exam</h3>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="IMGS FOR FINALS/Tondaligan.jpg" alt="S.H.A.F.T." width="100%" height="650px">
+      <div class="carousel-caption">
+    <h3>Tondaligan Beach</h3>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="IMGS FOR FINALS/GrahphicsPIc.jpg" alt="Hall of Stasis" width="100%" height="650px">
+      <div class="carousel-caption">
+    <h3>Last Day of Graphics Class</h3>
+  </div>
+    </div>
+  </div>
+
+
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+      </div>
+
+      <div class="container-fluid mt-4 px-5">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="img-row1">
+                    <div class="image-with-date">
+                        <img class="img-mem" src="IMGS FOR FINALS/MeNLu.jpg">
+                        <div class="date-overlay">17 MAY</div>
+        </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="img-row1">
+                    <div class="image-with-date">
+                        <img class="img-mem" src="IMGS FOR FINALS/MeNRs.jpg">
+                        <div class="date-overlay">17 MAY</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="img-row1">
+                    <div class="image-with-date">
+                        <img class="img-mem" src="IMGS FOR FINALS/Tomorro.jpg">
+                        <div class="date-overlay">17 MAY</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="img-row1">
+                    <div class="image-with-date">
+                        <img class="img-mem" src="IMGS FOR FINALS/KFC.jpg">
+                        <div class="date-overlay">17 MAY</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-start">
+    <div class="col-md-7 col-sm-6">
+        <div class="image-with-date">
+                        <img class="img-fluid p-2" src="IMGS FOR FINALS/Flower.jpg" style="width: 800px; height: 500px; object-fit: cover; object-position: center 70%;">
+                        <div class="date-overlay">01 MAY</div>
+                    </div>
+        
+    </div>
+    
+    <div class="col-md-5 col-sm-6 d-flex flex-column">
+        <p class="p-2 h5" style="font-family: Minion;">About me</p>
+        <img class="img-fluid p-2" src="IMGS FOR FINALS/Me.png" style="width: 100%; height: 300px; object-fit: cover; object-position: center 5%;">
+        <p class="p-2 flex-grow-1" style="font-family: ProximaNova;">Hello, I am Rodrigo T. Rivera III <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa fugit ad omnis nesciunt corrupti rem iusto dolores modi cupiditate officiis</p>
+        <a class="btn btn-outline-E94F37 btn-block p-2" id="NavText" href="PortfolioHOME.html" style="width: 120px; margin-left: 10px;">Read more</a>
+    </div>
+
+    <div class="col-md-7 col-sm-6 mt-4">
+        <p class="p-2 h5 text-center" style="font-family: Minion; font-size: 30px;">"A Summer Bloom"</p>
+    <p class="p-2 flex-grow-1 mx-5 text-center" style="font-family: ProximaNova;">This summer, a white flower bloomed in Lola’s garden. Its delicate petals caught the golden light—and my heart. When she saw me admiring it, her eyes sparkled. That tiny blossom still reminds me of her love.</p>
+    <a class="btn btn-outline-E94F37 btn-block mx-auto" id="NavText" href="" style="width: 120px;">Activities</a>
+    <div class="row gx-2 mt-4">
+        <div class="col-md-6 image-with-date">
+                    <div class="date-overlay">31 MAY</div>                                         
+                    <img class="img-fluid w-100 p-2" src="IMGS FOR FINALS/GymProg.jpg" style="height: 300px; object-fit: cover; object-position: center 5%;">
+        </div>
+        <div class="col-md-6 image-with-date">
+                    <div class="date-overlay">07 MAY</div>                                         
+                    <img class="img-fluid w-100 p-2" src="IMGS FOR FINALS/Legpress.png" style="height: 300px; object-fit: cover; object-position: center 70%;">
+        </div>
+    </div>
+
+    <div class="row gx-2 mt-4">
+        <div class="col-md-6 image-with-date">
+                    <div class="date-overlay">08 MAY</div>                                         
+                    <img class="img-fluid w-100 p-2" src="IMGS FOR FINALS/TRICEP.jpg" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-md-6">
+            <div class="memory-highlight mt-2 p-4">
+                        <h2 class="mb-4" style="font-family: Minion;">GYM COMEBACK</h2>
+                        <p class="lead" style="font-family: 'ProximaNova';">
+                           Ever since 2nd Semester came to an end, I found myself with the free time I used to have and I decided to go back to working out. 
+                        </p>
+                    </div>
+        </div>
+    </div>
+</div>
+
+    <div class="col-md-5 col-sm-6 d-flex flex-column">
+        <p class="p-2 h5" style="font-family: Minion;">Follow me</p>
+        <div class="d-flex"> 
+            <i class="fa-brands fa-facebook m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-brands fa-twitter m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-brands fa-youtube m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-brands fa-instagram m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-solid fa-envelope m-2 p-1" style="font-size: 1.5rem;"></i>
+        </div>
+        <p class="p-2 h5 mt-5" style="font-family: Minion;">Featured Moments</p>
+
+        <div id="gym" class="carousel slide mt-4 mx-3" data-ride="carousel" style="max-width: 500px;">
+
+  <ul class="carousel-indicators">
+    <li data-target="#gym" data-slide-to="0" class="active"></li>
+    <li data-target="#gym" data-slide-to="1"></li>
+    <li data-target="#gym" data-slide-to="2"></li>
+  </ul>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="IMGS FOR FINALS/GymBros.jpg"  width="100%" height="300px">
+    </div>
+    <div class="carousel-item">
+      <img src="IMGS FOR FINALS/GymBros2.jpg"  width="100%" height="300px">
+    </div>
+    <div class="carousel-item">
+      <img src="IMGS FOR FINALS/GymDay1.jpg"  width="100%" height="300px">
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#gym" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#gym" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+    <p class="p-2 h5 mt-5" style="font-family: Minion;">Featured Feats</p>
+    <div class="d-flex mt-4">
+        <i class="fa-solid fa-trophy" style="font-size: 2.5rem;"></i>
+        <p class="p-2 h5">160 LBS Leg Press</p>
+    </div>
+
+    <div class="d-flex mt-4">
+        <i class="fa-solid fa-trophy" style="font-size: 2.5rem;"></i>
+        <p class="p-2 h5">110 LBS Bench Press</p>
+    </div>
+
+    <div class="d-flex mt-4">
+        <i class="fa-solid fa-trophy" style="font-size: 2.5rem;"></i>
+        <p class="p-2 h5">10 KM Walk</p>
+    </div>
+    </div>
+</div>
+      </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-4 col-sm-3 image-with-date">
+                <div class="date-overlay">08 MAY</div>
+                <div class="date-overlay" style="margin-top: 790px;">21 MAY</div>
+                <img class="img-fluid w-100 p-2" src="IMGS FOR FINALS/MultipleFood.jpg" style="height: 500px; object-fit: cover;">
+                <p class="p-2 h5 text-center mt-4" style="font-family: Minion; font-size: 30px;">"Matcha Moments"</p>
+                <p class="p-2 flex-grow-1 mx-5 mt-3 text-center">At our favorite cafe, laughter blends with the earthy sweetness of matcha lattes. My friends tease me for always ordering the same thing, but that vibrant green comfort—warm, slightly bitter, perfectly foamy—tastes like happiness. These are our golden afternoons.</p>
+                <img class="img-fluid w-100 p-2 mt-4" src="IMGS FOR FINALS/MeshroomGroup.jpg" style="height: 500px; object-fit: cover;">
+            </div>
+
+            <div class="col-md-4 col-sm-3 image-with-date">
+                <div class="date-overlay" style="margin-top: 480px;">25 MAY</div>
+                <p class="p-2 h5 text-center" style="font-family: Minion; font-size: 30px;">"Sneaky Sneaky"</p>
+                <p class="p-2 flex-grow-1 mx-5 text-center" style="font-family: ProximaNova;">We smuggled pastries into the strict café, giggling like spies. Hidden under napkins, each stolen bite of flaky croissant tasted sweeter with rebellion. The barista’s suspicious glare only fueled our mischief—a delicious little crime in the name of snacktime anarchy.</p>
+                <div class="memory-highlight mt-2 p-4">
+                        <h2 class="mb-4 text-center" style="font-family: Minion;">Tondaligan Walks</h2>
+                        <p class="lead" style="font-family: 'ProximaNova';">
+                            Being able to smell the beach and feeling the sea breeze flow through my hair is a feeling I would never forget.
+                        </p>
+                    </div>
+                    <img class="img-fluid w-100 p-2 mt-4" src="IMGS FOR FINALS/TondaFeet.jpg" style="height: 500px; object-fit: cover;">
+                    <p class="p-2 h5 text-center mt-4" style="font-family: Minion; font-size: 30px;">"Summer’s End"</p>
+                    <p class="p-2 flex-grow-1 mx-5 mt-3 text-center">The season fades, but its glow lingers—sun-kissed skin, laughter echoing through humid nights, and the taste of ripe mangoes. Summer wasn’t just heat; it was fireflies, sudden storms, and time stretching like golden hour. A fleeting magic I’ll chase forever.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-3 image-with-date">
+                <div class="date-overlay">20 MAY</div>
+                <img class="img-fluid w-100 p-2" src="IMGS FOR FINALS/Meshroom.jpg" style="height: 500px; object-fit: cover;">
+                
+                <p class="p-2 h5 mt-3">Summer Stats (Average)</p>
+                <div class="d-flex mt-2">
+                    <i class="fa-solid fa-money-bill-wave m-2 p-1" style="font-size: 2rem;"></i>
+                    <p class="p-3 h5">Spent</p>
+                    <p class="p-3 h5 ml-auto">P3300 Aprox.</p>
+                </div>
+
+                <div class="d-flex mt-2">
+                    <i class="fa-solid fa-road m-2 p-1" style="font-size: 2rem;"></i>
+                    <p class="p-3 h5">Travelled</p>
+                    <p class="p-3 h5 ml-auto">45KM Aprox.</p>
+                </div>
+
+                <div class="d-flex mt-2">
+                    <i class="fa-solid fa-moon m-2 p-1" style="font-size: 2rem;"></i>
+                    <p class="p-3 h5">Sleep</p>
+                    <p class="p-3 h5 ml-auto">12am Avg.</p>
+                </div>
+
+                <div class="d-flex mt-2">
+                    <i class="fa-solid fa-clock m-2 p-1" style="font-size: 2rem;"></i>
+                    <p class="p-3 h5">Waking up</p>
+                    <p class="p-3 h5 ml-auto">6am Avg.</p>
+                </div>
+
+                <p class="p-2 h5 mt-5">Leave a suggestion</p>
+
+                <div class="col-md-">
+    <div class="bg-light p-4 rounded mb-4">
+        <p class="mb-4">Leave a suggestion to where I should go next, and or try out different things.</p>
+        
+        <form class="mb-3">
+            <div class="form-group mb-3">
+                <input type="suggestion" class="form-control" placeholder="Your suggestion">
+            </div>
+            <div class="form-check mb-4">
+                <input class="form-check-input mt-2 ml-1" type="checkbox" id="termsCheck">
+                <label class="form-check-label small" for="termsCheck">
+                    I agree to the terms & conditions
+                </label>
+            </div>
+            <button type="submit" class="btn btn-dark w-100 text-uppercase">Send</button>
+        </form>
+    </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center mb-4">
+        <div class="col-auto position-relative">
+            <img class="img-fluid" src="IMGS FOR FINALS/IG.png" style="height: 150px; width: auto; margin-bottom: -380px;">
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <img class="img-fluid w-100" src="IMGS FOR FINALS/Matcha.jpg" style="height: 300px; object-fit: cover;">
+            </div>
+            
+            <div class="col-md-2 col-sm-3">
+                <img class="img-fluid w-100 " src="IMGS FOR FINALS/Matcha1.jpg" style="height: 300px; object-fit: cover;">
+            </div>
+
+            <div class="col-md-2 col-sm-3">
+                <img class="img-fluid w-100 " src="IMGS FOR FINALS/DonBen2.jpg" style="height: 300px; object-fit: cover;">
+            </div>
+
+            <div class="col-md-2 col-sm-3">
+                <img class="img-fluid w-100 " src="IMGS FOR FINALS/MatchawithKafka.jpg" style="height: 300px; object-fit: cover;">
+            </div>
+
+            <div class="col-md-2 col-sm-3">
+                <img class="img-fluid w-100" src="IMGS FOR FINALS/MatchawithBiscuit.jpg" style="height: 300px; object-fit: cover;">
+            </div>
+
+            <div class="col-md-2 col-sm-3">
+                <img class="img-fluid w-100 " src="IMGS FOR FINALS/MatchawithStrawberry.jpg" style="height: 300px; object-fit: cover;">
+            </div>
+
+            </div>
+
+    </div>
+
+    <div class="container mt-4 p-3">
+    <div class="row align-items-center">
+        <div class="col-md-6 col-12 text-center mx-auto">
+            <h1 id="MYSUMMER">My <span id="summer">Summer 20</span>25</h1>
+           <p class="p-2 h5 text-center mt-4" style="font-family: Minion; font-size: 30px;">"Summer’s End"</p>
+                    <p class="p-2 flex-grow-1 mx-5 mt-3 text-center">The season fades, but its glow lingers—sun-kissed skin, laughter echoing through humid nights, and the taste of ripe mangoes. Summer wasn’t just heat; it was fireflies, sudden storms, and time stretching like golden hour. A fleeting magic I’ll chase forever.</p>
+            <div class="d-flex justify-content-center align-items-center"> 
+            <i class="fa-brands fa-facebook m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-brands fa-twitter m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-brands fa-youtube m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-brands fa-instagram m-2 p-1" style="font-size: 1.5rem;"></i>
+            <i class="fa-solid fa-envelope m-2 p-1" style="font-size: 1.5rem;"></i>
+        </div>
+        </div>
+        
+        
+    </div>
+</div>
+    </body>
+</html>
