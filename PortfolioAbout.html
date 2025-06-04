@@ -13,6 +13,9 @@
     <script src="Bootstrap/-3.4.min.js"></script>
     <script src="Bootstrap/popper.min.js"></script>	
     <script src="Bootstrap/bootstrap.js" ></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
     <link rel="stylesheet" type="text/css" href="mystyles.css">
     <style>
         @font-face {
@@ -179,6 +182,14 @@
                 font-size: 1.5rem;
             }
         }
+
+      #map {
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin: 20px auto;
+        }
     </style>
     <script>
        
@@ -231,6 +242,32 @@
                 </div>
             </div>
         </div>
+
+      <h1 class="text-center">My Home</h1>
+    <div id="map"></div>
+    
+    <script>
+
+        const schoolLocation = [16.0694, 120.4060];
+        
+        const map = L.map('map').setView(schoolLocation, 16);
+
+        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+
+
+        const marker = L.marker(schoolLocation,).addTo(map);
+
+        L.circle(schoolLocation, {
+            color: '#3388ff',
+            fillColor: '#3388ff',
+            fillOpacity: 0.2,
+            radius: 100
+        }).addTo(map);
+    </script>
 
         <h2 class="section-title text-center text-white bg-secondary-custom py-3 mb-5 rounded">Education</h2>
         <div class="row">
