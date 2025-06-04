@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>About Rodrigo | Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="webdevTemplate/webdevTemplate/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="webdevTemplate/webdevTemplate/js/bootstrap.min.js"></script>
+    <script src="webdevTemplate/webdevTemplate/js/jquery-3.4.min.js"></script>
+    <script src="webdevTemplate/webdevTemplate/js/popper.min.js"></script>	
+    <script src="webdevTemplate/webdevTemplate/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <style>
+        @font-face {
+            font-family: 'Futura';
+            src: url(webdevTemplate/webdevTemplate/fonts/futur.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'ProximaNova';
+            src: url(webdevTemplate/webdevTemplate/fonts/Proxima-Nova/Proxima\ Nova\ Alt\ Light.otf);
+            font-weight:lighter;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'FuturaLight';
+            src: url(webdevTemplate/webdevTemplate/fonts/futura\ light\ bt.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'FuturaBold';
+            src: url(webdevTemplate/webdevTemplate/fonts/Futura\ Heavy\ font.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #F7F5EF; 
+            background-image: url(Imgs/BG\ grid.png);
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color: rgba(203, 171, 140, 0.8) !important;
+            backdrop-filter: blur(5px);
+        }
+
+        .nav-link {
+            font-family: 'ProximaNova';
+            color: #7d4715 !important;
+            position: relative;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #B17F51 !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #B17F51;
+            transition: all 0.3s;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        .text-custom {
+            color: #B17F51;
+        }
+
+        .bg-custom {
+            background-color: #B17F51;
+        }
+
+        .bg-secondary-custom {
+            background-color: #5A6364;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 5px solid #F7F5EF;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-family: 'FuturaBold';
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #F7F5EF;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .skill-box, .hobby-box {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+        }
+
+        .skill-box:hover, .hobby-box:hover {
+            transform: scale(1.05);
+        }
+
+        .skill-img, .hobby-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #B17F51;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .footer-logo {
+            width: 75px;
+            transition: transform 0.3s;
+        }
+
+        .footer-logo:hover {
+            transform: rotate(15deg);
+        }
+
+        @media (max-width: 768px) {
+            .profile-img {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 20px;
+            }
+            
+            .display-4 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+       
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto"> 
+                    <li class="nav-item mx-3">
+                        <li class="nav-item mx-3">
+            <a class="nav-link text-B17F51 nav-custom" id="NavText" href="SummerPort.html">Summer</a>
+          </li>
+                        <a class="nav-link" href="PortfolioHOME.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" href="PortfolioAbout.html">About</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="PorfolioCollage.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="PortfolioContact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row align-items-center bg-custom rounded-lg p-4 p-md-5 mb-5 shadow">
+            <div class="col-md-4 text-center">
+                <img class="profile-img rounded-circle" src="Imgs/Me.png" alt="Rodrigo T. Rivera III">
+            </div>
+            <div class="col-md-8 mt-4 mt-md-0">
+                <h1 class="text-white mb-4">Rodrigo T. Rivera III</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="text-white"><i class="fas fa-birthday-cake mr-2"></i> <strong>Age:</strong> 19 years old</p>
+                        <p class="text-white"><i class="fas fa-calendar-alt mr-2"></i> <strong>Birth Date:</strong> June 13, 2005</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="text-white"><i class="fas fa-map-marker-alt mr-2"></i> <strong>Address:</strong> Mangaldan, Pangasinan</p>
+                        <p class="text-white"><i class="fas fa-church mr-2"></i> <strong>Religion:</strong> Roman Catholic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title text-center text-white bg-secondary-custom py-3 mb-5 rounded">Education</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-header bg-secondary-custom text-white text-center">
+                        <i class="fas fa-graduation-cap mr-2"></i> Primary School
+                    </div>
+                    <img class="card-img-top" src="Imgs/Portfolio/SPEC.jpg" alt="Saint Paul Educational Center">
+                    <div class="card-footer bg-secondary-custom text-white text-center">
+                        Saint Paul Educational Center
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-header bg-secondary-custom text-white text-center">
+                        <i class="fas fa-graduation-cap mr-2"></i> Junior High School
+                    </div>
+                    <img class="card-img-top" src="Imgs/Portfolio/SibulanNHS.png" alt="Sibulan National High School">
+                    <div class="card-footer bg-secondary-custom text-white text-center">
+                        Sibulan National High School
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-header bg-secondary-custom text-white text-center">
+                        <i class="fas fa-graduation-cap mr-2"></i> Senior High School
+                    </div>
+                    <img class="card-img-top" src="Imgs/Portfolio/NOHS.jpg" alt="Negros Oriental High School">
+                    <div class="card-footer bg-secondary-custom text-white text-center">
+                        Negros Oriental High School
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-header bg-secondary-custom text-white text-center">
+                        <i class="fas fa-university mr-2"></i> College
+                    </div>
+                    <img class="card-img-top" src="Imgs/Portfolio/ul-logo-2.png" alt="University of Luzon">
+                    <div class="card-footer bg-secondary-custom text-white text-center">
+                        University of Luzon
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title text-center text-white bg-custom py-3 my-5 rounded">Skills</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="skill-box">
+                    <img class="skill-img" src="Imgs/Portfolio/Programming.png" alt="Programming">
+                    <h4 class="text-custom mt-3"><i class="fas fa-code mr-2"></i> Programming</h4>
+                    <p class="text-muted">Proficient in various programming languages and problem-solving</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="skill-box">
+                    <img class="skill-img" src="Imgs/Portfolio/Cooking.png" alt="Cooking">
+                    <h4 class="text-custom mt-3"><i class="fas fa-utensils mr-2"></i> Cooking</h4>
+                    <p class="text-muted">Skilled in preparing diverse cuisines with creative flair</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="skill-box">
+                    <img class="skill-img" src="Imgs/Portfolio/Breadbaord.png" alt="Basic Electric Circuitry">
+                    <h4 class="text-custom mt-3"><i class="fas fa-bolt mr-2"></i> Basic Electric Circuitry</h4>
+                    <p class="text-muted">Understanding of electronic components and circuit design</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="skill-box">
+                    <img class="skill-img" src="Imgs/Portfolio/Arts.png" alt="Creative Processes">
+                    <h4 class="text-custom mt-3"><i class="fas fa-palette mr-2"></i> Creative Processes</h4>
+                    <p class="text-muted">Strong artistic vision and innovative thinking</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="skill-box">
+                    <img class="skill-img" src="Imgs/Portfolio/Organize.png" alt="Organizational Skills">
+                    <h4 class="text-custom mt-3"><i class="fas fa-tasks mr-2"></i> Organizational Skills</h4>
+                    <p class="text-muted">Excellent time management and task prioritization</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="skill-box">
+                    <img class="skill-img" src="Imgs/Portfolio/Leadership.jpg" alt="Leadership Skills">
+                    <h4 class="text-custom mt-3"><i class="fas fa-users mr-2"></i> Leadership Skills</h4>
+                    <p class="text-muted">Proven ability to guide teams and inspire collaboration</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title text-center text-white bg-secondary-custom py-3 my-5 rounded">Hobbies</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6">
+                <div class="hobby-box">
+                    <img class="hobby-img" src="Imgs/Portfolio/Videogames.png" alt="Video Games">
+                    <h4 class="text-custom mt-3"><i class="fas fa-gamepad mr-2"></i> Video Games</h4>
+                    <p class="text-muted">Enthusiastic gamer with strategic thinking abilities</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="hobby-box">
+                    <img class="hobby-img" src="Imgs/Portfolio/Exercise.png" alt="Working Out">
+                    <h4 class="text-custom mt-3"><i class="fas fa-dumbbell mr-2"></i> Working Out</h4>
+                    <p class="text-muted">Committed to physical fitness and healthy lifestyle</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="hobby-box">
+                    <img class="hobby-img" src="Imgs/Portfolio/Walking.png" alt="Walking">
+                    <h4 class="text-custom mt-3"><i class="fas fa-walking mr-2"></i> Walking</h4>
+                    <p class="text-muted">Enjoy exploring nature and urban environments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container text-center">
+            <p class="mb-3">CCS221 - Sum24 9-11</p>
+            <img src="Imgs/Portfolio/MeLogo.png" class="footer-logo" alt="Logo" style="width: 50px;">
+            <div class="social-icons mt-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mt-3 mb-0">&copy; 2024 Rodrigo T. Rivera III. All rights reserved.</p>
+        </div>
+    </footer>
+
+   
+  </body>
+</html>

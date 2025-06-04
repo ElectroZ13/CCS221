@@ -1,0 +1,236 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="webdevTemplate/webdevTemplate/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="webdevTemplate/webdevTemplate/js/bootstrap.min.js"></script>
+    <script src="webdevTemplate/webdevTemplate/js/-3.4.min.js"></script>
+    <script src="webdevTemplate/webdevTemplate/js/popper.min.js"></script>	
+    <script src="webdevTemplate/webdevTemplate/js/bootstrap.js" ></script>
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <style>
+        @font-face {
+            font-family: 'Futura';
+            src: url(webdevTemplate/webdevTemplate/fonts/futur.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'ProximaNova';
+            src: url(webdevTemplate/webdevTemplate/fonts/Proxima-Nova/Proxima\ Nova\ Alt\ Light.otf);
+            font-weight:lighter;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'FuturaLight';
+            src: url(webdevTemplate/webdevTemplate/fonts/futura\ light\ bt.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'FuturaBold';
+            src: url(webdevTemplate/webdevTemplate/fonts/Futura\ Heavy\ font.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #NavText{
+            font-family: 'ProximaNova';
+        }
+
+        .navbar {
+            background-color: rgba(203, 171, 140, 0.8) !important;
+            backdrop-filter: blur(5px);
+        }
+
+        .nav-link {
+            font-family: 'ProximaNova';
+            color: #7d4715 !important;
+            position: relative;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #B17F51 !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #B17F51;
+            transition: all 0.3s;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        .text-B17F51{
+            color: #7d4715;
+        }
+
+        .bg-me{
+            background-color: #B17F51;
+        }
+
+        .bg-me1{
+            background-color: rgba(240, 219, 198, 0.6);
+        }
+
+        .btn-outline-custom {
+            color: #B17F51;
+            border-color: #B17F51;
+        }
+
+        .nav-custom:hover {
+           color: white;
+        }
+
+        .btn-outline-custom:hover {
+           color: white;
+           background-color: #B17F51;
+           border-color: #B17F51;
+        }
+
+        .greet{
+            font-family: 'ProximaNova';
+            font-size: 61px;
+            color: #7d4715;
+        }
+
+        .greet1{
+            font-family: 'ProximaNova';
+            font-size: 20px;
+            color: #7d4715;
+        }
+
+        #Projectpoint{
+          font-family: 'FuturaLight';
+          margin-left: 39.5%;
+          margin-top: -50px;
+          font-size: 50px;
+          color: #b17f51;
+        }
+
+        #Name{
+            font-family: 'FuturaBold';
+            font-size: 61px;
+            color: #7d4715;
+        }
+
+        .bg-invis{
+            background-color: rgb(0, 0, 0, 0);
+        }
+
+        footer {
+            background-color: #B17F51;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .footer-logo {
+            width: 75px;
+            transition: transform 0.3s;
+        }
+
+        .footer-logo:hover {
+            transform: rotate(15deg);
+        }
+
+    
+	</style>
+	<script type="text/javascript">
+     $(window).ready(function() {
+	  
+		
+
+	});
+
+    </script>		
+
+  </head>
+  <body style="background-color: #F7F5EF; background-image: url(Imgs/BG\ grid.png);">
+  <nav class="navbar navbar-expand-sm" style="background-color: rgba(203, 171, 140, 0.6);">
+        
+        <ul class="navbar-nav mx-auto"> 
+          <li class="nav-item mx-3">
+            <a class="nav-link text-B17F51 nav-custom" id="NavText" href="SummerPort.html">Summer</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-B17F51 nav-custom" id="NavText" href="PortfolioHOME.html">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-B17F51 nav-custom" id="NavText" href="PortfolioAbout.html">About</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-B17F51 nav-custom" id="NavText" href="PorfolioCollage.html">Portfolio</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-B17F51 nav-custom" id="NavText" href="PortfolioContact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+     
+        <div class="jumbotron bg-me1" style="margin-top: 5%;">
+            <br>
+        <h1 class="greet1">ABOUT ME</h1>
+            <br>
+        <h1 class="display-4 greet">I'm Rodrigo T. Rivera III,</h1>
+        <h1 class="display-4 greet">a Computer Science </h1>
+        <h1 class="display-4 greet">Student</h1>
+               <br>
+                    
+
+                </div>
+                <img class="object-fit-cover p-2" src="Imgs/Me.png" style="width:380px; margin-left: 60%; margin-top: -36.5%;">
+
+                <div class="container">
+  <div class="row mb-3">
+    <div class="col-md-3 col-6 mb-2">
+      <a class="btn btn-outline-custom btn-block text-B17F51" id="NavText" href="PortfolioHOME.html">Home</a>
+    </div>
+    <div class="col-md-3 col-6 mb-2">
+      <a class="btn btn-outline-custom btn-block text-B17F51" id="NavText" href="PortfolioAbout.html">About</a>
+    </div>
+    <div class="col-md-3 col-6 mb-2">
+      <a class="btn btn-outline-custom btn-block text-B17F51" id="NavText" href="PorfolioCollage.html">Portfolio</a>
+    </div>
+    <div class="col-md-3 col-6 mb-2">
+      <a class="btn btn-outline-custom btn-block text-B17F51" id="NavText" href="PortfolioContact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+        
+<footer class="mt-5">
+        <div class="container text-center">
+            <p class="mb-3">CCS221 - Sum24 9-11</p>
+            <img src="Imgs/Portfolio/MeLogo.png" class="footer-logo" alt="Logo" style="width: 50px;">
+            <div class="social-icons mt-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mt-3 mb-0">&copy; 2024 Rodrigo T. Rivera III. All rights reserved.</p>
+        </div>
+    </footer>
+      
+  </body>
+</html>
